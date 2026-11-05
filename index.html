@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ilkin Mammadov — first-year Bachelor's student in Artificial Intelligence Systems at Vilnius Tech.">
+  <meta name="theme-color" content="#f5f5f2">
+  <title>Ilkin Mammadov | CV</title>
+  <style>
+    :root {
+      --paper: #f5f5f2;
+      --surface: #ffffff;
+      --ink: #20231f;
+      --muted: #687069;
+      --line: #dedfd9;
+      --accent: #315d52;
+      --accent-soft: #e8efeb;
+      --max: 1040px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 15px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 4px; }
+    a:hover { color: var(--accent); }
+    .page { width: min(var(--max), calc(100% - 48px)); margin: 0 auto; }
+    .topbar {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 25px 0; border-bottom: 1px solid var(--line);
+    }
+    .wordmark { font-size: 13px; font-weight: 750; letter-spacing: .11em; text-transform: uppercase; }
+    .nav { display: flex; gap: 25px; color: var(--muted); font-size: 13px; }
+    .nav a { text-decoration: none; }
+    .hero {
+      display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(230px, .65fr);
+      gap: 72px; align-items: center; padding: 76px 0 68px;
+    }
+    .kicker { color: var(--accent); font-size: 11px; font-weight: 750; letter-spacing: .16em; text-transform: uppercase; }
+    h1 { margin: 13px 0 18px; font-size: clamp(42px, 6vw, 66px); line-height: 1.04; letter-spacing: -.055em; font-weight: 650; }
+    .intro { max-width: 620px; margin: 0; color: #505951; font-size: 17px; line-height: 1.8; }
+    .meta { display: flex; flex-wrap: wrap; gap: 9px 22px; margin-top: 27px; color: var(--muted); font-size: 13px; }
+    .meta span::before { content: "•"; color: var(--accent); margin-right: 8px; }
+    .photo-wrap { position: relative; }
+    .photo-wrap img {
+      display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover;
+      object-position: center 35%; border-radius: 3px; filter: saturate(.88);
+    }
+    .photo-caption { margin: 9px 0 0; color: var(--muted); font-size: 11px; letter-spacing: .04em; }
+    .section { display: grid; grid-template-columns: 190px 1fr; gap: 38px; padding: 31px 0 35px; border-top: 1px solid var(--line); }
+    .section-label { margin: 3px 0 0; color: var(--accent); font-size: 11px; font-weight: 750; letter-spacing: .15em; text-transform: uppercase; }
+    .section-content h2 { margin: 0 0 14px; font-size: 22px; font-weight: 620; letter-spacing: -.025em; }
+    .section-content p { margin: 0; color: #586159; }
+    .education-title { font-weight: 650; color: var(--ink) !important; }
+    .subline { margin-top: 4px !important; font-size: 13px; color: var(--muted) !important; }
+    .skills { display: flex; flex-wrap: wrap; gap: 9px; }
+    .skill { padding: 7px 12px; border: 1px solid var(--line); background: rgba(255,255,255,.62); border-radius: 2px; font-size: 13px; }
+    .item { display: grid; grid-template-columns: 145px 1fr; gap: 20px; padding: 13px 0; border-bottom: 1px solid #e8e9e4; }
+    .item:last-child { border-bottom: 0; }
+    .item-date { color: var(--muted); font-size: 12px; }
+    .item-title { margin: 0 0 3px; font-weight: 650; }
+    .item-detail { color: #586159; font-size: 13px; }
+    .contact-box { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 19px 21px; background: var(--accent-soft); }
+    .contact-box p { font-size: 14px; }
+    .contact-link { color: var(--accent); font-weight: 650; white-space: nowrap; }
+    footer { display: flex; justify-content: space-between; gap: 20px; padding: 25px 0 38px; color: var(--muted); font-size: 12px; }
+    @media (max-width: 700px) {
+      .page { width: min(100% - 32px, var(--max)); }
+      .topbar { align-items: flex-start; flex-direction: column; gap: 13px; }
+      .nav { gap: 15px; flex-wrap: wrap; }
+      .hero { grid-template-columns: 1fr; gap: 28px; padding: 48px 0; }
+      .photo-wrap { max-width: 330px; }
+      .section { grid-template-columns: 1fr; gap: 12px; padding: 25px 0; }
+      .item { grid-template-columns: 1fr; gap: 3px; }
+      .contact-box, footer { align-items: flex-start; flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="topbar">
+      <div class="wordmark">Ilkin Mammadov</div>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#profile">Profile</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#highlights">Highlights</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="profile">
+        <div>
+          <div class="kicker">Curriculum Vitae · 2026</div>
+          <h1>Ilkin<br>Mammadov</h1>
+          <p class="intro">
+            First-year Bachelor's student in Artificial Intelligence Systems at Vilnius Tech.
+            Interested in software development, artificial intelligence and applying analytical
+            thinking to practical problems. I am building my technical foundation through
+            university studies and independent programming projects.
+          </p>
+          <div class="meta">
+            <span>Vilnius, Lithuania</span>
+            <span>English · Russian · Azerbaijani</span>
+            <span>Bachelor's studies</span>
+          </div>
+        </div>
+        <div class="photo-wrap">
+          <img src="profile.jpg" alt="Ilkin Mammadov in his university classroom">
+          <p class="photo-caption">University classroom portrait</p>
+        </div>
+      </section>
+
+      <section class="section" id="education">
+        <h2 class="section-label">01 / Education</h2>
+        <div class="section-content">
+          <h2>Vilnius Gediminas Technical University (Vilnius Tech)</h2>
+          <p class="education-title">Bachelor's degree studies — Artificial Intelligence Systems</p>
+          <p>First-year student · Faculty of Electronics · Group EDIfu26/2</p>
+          <p class="subline">Vilnius, Lithuania</p>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <h2 class="section-label">02 / Skills</h2>
+        <div class="section-content">
+          <div class="skills">
+            <span class="skill">Python</span>
+            <span class="skill">C++</span>
+            <span class="skill">MATLAB</span>
+            <span class="skill">Artificial Intelligence</span>
+            <span class="skill">Machine Learning fundamentals</span>
+            <span class="skill">Analytical thinking</span>
+            <span class="skill">Problem solving</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="highlights">
+        <h2 class="section-label">03 / Highlights</h2>
+        <div class="section-content">
+          <div class="item">
+            <div class="item-date">English proficiency</div>
+            <div><p class="item-title">IELTS — Overall Band 7.0</p><p class="item-detail">International English language test result.</p></div>
+          </div>
+          <div class="item">
+            <div class="item-date">Academic achievement</div>
+            <div><p class="item-title">SAT — 1360</p><p class="item-detail">Math: 790 · Evidence-Based Reading and Writing: 570.</p></div>
+          </div>
+          <div class="item">
+            <div class="item-date">2022</div>
+            <div><p class="item-title">CodeLand Programming School — First Place</p><p class="item-detail">Received first place for a programming project.</p></div>
+          </div>
+          <div class="item">
+            <div class="item-date">2023</div>
+            <div><p class="item-title">Banking-themed programming project</p><p class="item-detail">Developed an independent programming project focused on a banking concept.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <h2 class="section-label">04 / Contact</h2>
+        <div class="section-content">
+          <div class="contact-box">
+            <p>Interested in student projects, internships and opportunities to learn through practical experience.</p>
+            <a class="contact-link" href="https://github.com/Tr1cky-Developer" target="_blank" rel="noopener noreferrer">GitHub profile ↗</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>© 2026 Ilkin Mammadov</span>
+      <span>Personal CV · Vilnius, Lithuania</span>
+    </footer>
+  </div>
+</body>
+</html>
